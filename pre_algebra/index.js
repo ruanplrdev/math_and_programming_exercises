@@ -25,26 +25,19 @@ function calcularPrimos(value) {
   const primos = [];
   // é par
 
-  for (let i = 1; i <= value; i++) {
-    const max3Divisores = [];
-    const currentValue = i;
-    console.log("[LOG] currentValue: ", currentValue);
+  for (let i = 2; i <= value; i++) {
+    let isPrimo = true;
 
-    for (let divisor = 1; divisor <= currentValue; divisor++) {
-      // console.log("[LOG] "+currentValue+" é divisivél por "+divisor+"?: ", currentValue % divisor === 0? `${currentValue} SIM! É divisivel`:`${currentValue} NÃO é divisivel`);
-      // console.log("[LOG] divisor:", divisor);
-      if (currentValue % divisor === 0) {
-        max3Divisores.push(divisor);
-      }
-      if (max3Divisores.length === 3) {
-        // console.log("[LOG] "+currentValue+" não é primo");
-        break;
-      }
-      if (currentValue === divisor) {
-        // console.log("[LOG] "+currentValue+" é primo!");
-        primos.push(currentValue);
+    for (let divisor = 2; divisor <= Math.sqrt(i); divisor++) {
+      if(i % divisor===0){
+        isPrimo = false;
+        break
       }
     }
+    if(isPrimo){
+      primos.push(i);
+    }
+
   }
 
   return primos;
