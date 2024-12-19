@@ -1,0 +1,17 @@
+{
+  "name": "pre_algebra",
+  "version": "1.0.0",
+  "description": "Exercícios de pre-algebra da Kanh Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test", 
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Algebra",
+    "matemática",
+    "programação"
+  ],
+  "author": "Ruan Pissinati",
+  "license": "ISC"
+}
