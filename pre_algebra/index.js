@@ -23,8 +23,6 @@ function calcularImpares(value) {
 // Função para calcular números primos até um limite
 function calcularPrimos(value) {
   const primos = [];
-  // é par
-
   for (let i = 2; i <= value; i++) {
     let isPrimo = true;
 
@@ -37,9 +35,7 @@ function calcularPrimos(value) {
     if(isPrimo){
       primos.push(i);
     }
-
   }
-
   return primos;
 }
 

@@ -1,0 +1,19 @@
+{
+  "name": "math_and_programming_exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruanplrdev/math_and_programming_exercises.git"
+  },
+  "author": "Ruan Pissinati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruanplrdev/math_and_programming_exercises/issues"
+  },
+  "homepage": "https://github.com/ruanplrdev/math_and_programming_exercises#readme",
+  "description": ""
+}
